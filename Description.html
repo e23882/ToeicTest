@@ -1,0 +1,41 @@
+﻿<html>
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=Big5"/>
+		<link rel="stylesheet" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/default.css"/>	
+		<script src="js/common.js"></script>
+    </head>
+    <body>
+		<div class="descMain">
+			<img class="descLogo" src="img/title.PNG"/>
+			<center>
+				<div class="descContent">
+					<p>1. 考前須知</p>
+					<ul class="descUl">
+						<li><span>本測驗共有7個單元，Part1~Part4為聽力測驗，每個聽力題之前都有一個<img src="img/play.PNG"  id="playImg"/>符號，請點選該符號，並開始該題目的測驗。</span></li>
+						<li><span>每個聽力題題目僅能播放一次，請務必仔細聆聽。</span></li>
+						<li><span>當一個題目未播放完畢時，請勿點選下一個題目，否則將會同時播放。</span></li>
+					</ul>
+					<hr/>
+					<p>2. 請先進行聽力音量測試</p>
+					<ul class="descUl">
+						<li><span>請按<img src="img/play2.PNG" id="playImg"/>開始播放測試音，過程中可隨時拉動調整音量，完成請點選「開始測驗」。</span></li>
+					</ul>
+					<div class="testPlayBox">
+						<div class="testPlayBoxContent">
+							<a onclick="playsound()" style="cursor:pointer;">
+								<img src="img/playtimeIcon.PNG" />
+							</a>
+							<div id="time">
+								<span class="time" id="sec">0:00</span>
+								<span class="time" style="margin:0px 3px;">/</span>
+								<span class="time"> 0:30</span>
+							</div>
+						</div>
+					</div>
+					<input type="button" value="開始測驗" id="startTest"/>
+				</div>
+			</center>
+		</div>
+	</body>
+</html>

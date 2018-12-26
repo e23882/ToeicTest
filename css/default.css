@@ -1,0 +1,205 @@
+body
+{
+	background-color:#808080;
+	display:  flex;
+    align-items: center;
+    justify-content:  center;
+}
+input
+{
+	margin-top:30px;
+}
+form
+{
+	text-align:center;
+	margin-top:100px;
+}
+p
+{
+	font-weight:bold;
+	margin-bottom:15px;
+}
+ul
+{
+	list-style-type:disc;
+}
+li
+{
+	color:#E45304;
+	line-height:30px;
+}
+span
+{
+	color:#bababa;
+	font-weight:900;
+	font-size:16px;
+}
+.input
+{
+	width:280px;
+	height:38px;
+}
+.loginForm
+{
+	background-color:#FFFFFF;
+	width:388px;
+	height:415px;
+	border-radius:8px;
+	position:absolute;
+	left:0px;
+	right:0px;
+	margin:auto;
+}
+.circle
+{
+	height:auto;
+	width:auto;
+	background-color:#E45304;
+	border-radius:999em;
+	position:absolute;
+	left:0px;
+	right:0px;
+	margin:auto;
+	top:-30px;
+	z-index:10;
+}
+.title
+{
+	height:auto;
+	width:auto;
+	position:absolute;
+	left:0px;
+	right:0px;
+	margin:auto;
+	top:15%;
+}
+.userID
+{
+	padding:5px;
+	font-family:Segoe UI, Regular;
+	
+}
+.msg
+{
+	position:absolute;
+	bottom:0px;
+	background-color:#F5F5F5;
+	width:100%;
+	z-index:1;
+	padding:25px 0px;
+	color:#E45304;
+	border-bottom-right-radius:8px;
+	border-bottom-left-radius:8px;
+	text-align:center;
+	font-size:14px;
+	font-weight:300;
+}
+.descMain
+{
+	width:556px;
+	height:650px;
+	background-color:white;
+	border-radius:8px;
+	padding:0px 7px;;
+	
+}
+.descUl
+{
+	margin-left:30px;
+}
+.descLogo
+{
+	width:auto;
+	position:absolute;
+	left:0px;
+	right:0px;
+	margin:auto;
+	margin-top:40px;
+}
+.descContent
+{
+	margin-top:130px;
+	font-family:微軟正黑體;
+	width:448px;
+	text-align:left;
+}
+.time
+{
+	float:left;
+	vertical-align:middle;
+	font-size:4px;
+	color:#E45304;
+}
+.testPlayBox
+{
+	width:448px;
+	height:88px;
+	background-color:#F5F5F5;
+}
+.testPlayBoxContent
+{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	line-height:88px;
+}
+
+#startTest
+{
+	border:none;
+	width:448px;
+	height:42px;
+	background-color:#F5F5F5;
+	margin-top:26px;
+	color:white;
+	font-size:16px;
+	cursor:Default;
+}
+
+#submit
+{
+	background-color:#E45304;
+	color:white;
+	font-family:微軟正黑體;
+	border:none;
+	font-size:16px;
+}
+#playImg
+{
+	width:18px;
+	padding:0px 5px;
+}
+#playtimeIcon
+{
+	position:absolute;
+	left:0px;
+	right:0px;
+	margin:auto;
+	margin-top:20px;
+}
+#time
+{
+	text-align:center;
+}
+/* Firefox */
+::placeholder 
+{
+	color: lightgray;
+	opacity: 1; 
+	padding-left:15px;
+	
+}
+ /* Internet Explorer 10-11 */
+:-ms-input-placeholder 
+{
+	color: lightgray;
+	padding-left:15px;
+}
+/* Microsoft Edge */
+::-ms-input-placeholder 
+{ 
+	color: lightgray;
+	padding-left:15px;
+}
+
+

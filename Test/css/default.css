@@ -1,0 +1,123 @@
+body
+{
+	display:  flex;
+    /* align-items: center; */
+    justify-content:  center;
+	padding:38px;
+}
+label
+{
+	margin-left:18px;
+	font-family:Arial;
+	font-size:16px;
+	color:#5D5D5D;
+}
+#logo
+{
+	position:absolute;
+	top:12px;
+	left:33.6px;
+}
+#time
+{
+	position:absolute;
+	top:17px;
+	right:38px;
+}
+#tabItemHeader
+{
+	padding:15.5px 30px 10px 30px;
+	color:#E45304;
+	font-weight:bold;
+	font-family:Arial;
+}
+#toNextPage
+{
+	background-color:#E45304;
+	color:white;
+	font-family:微軟正黑體;
+	border:none;
+	font-size:16px;
+	padding:10px 30px;
+	
+}
+
+.liTopLine
+{
+	position: absolute;
+    background-color: #E45304;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 3px;
+    width: 99%;
+}
+.calTime
+{
+	font-family:Microsoft JhengHei UI, Bold;
+	color:#f44e1c;
+	font-size:30px;
+	font-weight:bold;
+}
+
+.content
+{
+	margin-top:30.5px;
+}
+.tabitem
+{
+	border-left : 1px lightgray solid;
+	border-right: 1px lightgray solid;
+	border-bottom:1px lightgray solid;
+	width:740px;
+	height:615px;
+	padding-left:45px;
+	padding-top:70px;
+	
+	overflow-y: scroll;
+
+	overflow-x: hidden;
+}
+.title
+{
+	font-family:Arial;
+	color:#5D5D5D;
+	font-size:16px;
+	font-weight:bold;
+}
+.direction
+{
+	font-family:Arial;
+	color:#5D5D5D;
+	font-size:16px;
+	font-weight:Regular;
+	padding-right:20px;
+	margin-top:30px;
+	line-height:27px;
+	
+}
+.question
+{
+	font-family:Arial;
+	color:#5D5D5D;
+	font-size:16px;
+	font-weight:bold;
+	margin-top:50px;
+	word-break:break-all;
+}
+.topic
+{
+	margin-top:33px;
+	float:left;
+}
+.questionBlock
+{
+	width:360px;
+	margin-top:50px;
+}
+
+.custom-control
+{
+	margin-top:8px;
+}
