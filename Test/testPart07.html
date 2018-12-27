@@ -1,0 +1,173 @@
+﻿<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=Big5"/>
+		<link rel="stylesheet" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/default.css"/>	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/common.js"></script>
+    </head>
+	<body onload="initPage(7)">
+		<div>
+			<div class="head">
+				<div id="logo">
+					<img src="img/title.PNG"/>
+				</div>
+				<div id="time">
+					<span style="font-family:Microsoft JhengHei UI, Regular;font-size:18px;">剩餘時間:　</span>
+					<span class="calTime" id="min">30</span>
+					<span class="calTime">分</span>
+					<span class="calTime" id="sec">00</span>
+					<span class="calTime">秒</span>
+				</div>
+			</div>
+			<div class="content">
+				<div>	
+					<ul class="nav nav-tabs" style="width:740px;">
+						<li>
+							<a href="#1" data-toggle="tab" id="tabItemHeader" class="tabItemHeader" onclick="changeTab(1)">
+								<div class="liTopLine">&nbsp;</div>
+								Part1
+							</a>
+						</li>
+						<li>
+							<a href="#1" data-toggle="tab" id="tabItemHeader" class="tabItemHeader" onclick="changeTab(2)">
+								<div class="liTopLine">&nbsp;</div>
+								Part2
+							</a>
+						</li>
+						<li>
+							<a href="#1" data-toggle="tab" id="tabItemHeader" class="tabItemHeader" onclick="changeTab(3)">
+								<div class="liTopLine">&nbsp;</div>
+								Part3
+							</a>
+						</li>
+						<li>
+							<a href="#1" data-toggle="tab" id="tabItemHeader" class="tabItemHeader" onclick="changeTab(4)">
+								<div class="liTopLine">&nbsp;</div>
+								Part4
+							</a>
+						</li>
+						<li>
+							<a href="#1" data-toggle="tab" id="tabItemHeader" class="tabItemHeader" onclick="changeTab(5)">
+								<div class="liTopLine">&nbsp;</div>
+								Part5
+							</a>
+						</li>
+						<li>
+							<a href="#1" data-toggle="tab" id="tabItemHeader" class="tabItemHeader" onclick="changeTab(6)">
+								<div class="liTopLine">&nbsp;</div>
+								Part6
+							</a>
+						</li>
+						<li class="active" >
+							<a href="#1" data-toggle="tab" id="tabItemHeader" class="tabItemHeader" onclick="changeTab(7)">
+								<div class="liTopLine">&nbsp;</div>
+								Part7
+							</a>
+						</li>
+					</ul>
+					<div class="tab-content ">
+						<div class="tab-pane active" id="1">
+							<div class="tabitem">
+								<!-- 標題 -->
+								<div class="title">PART 1 Photographs (3 questions)</div>
+								<!-- 敘述 -->
+								<div class="direction">
+									<span class="title">Directions:</span> For each question in this part, you will hear four statements about a picture. When you hear the statement, you must select the one statement that best describes what you see in the picture. The statement will be spoken only one time.
+								</div>
+									
+								<form name="part1">
+									<!-- 問題標題 -->
+									<div class="question">QUESTION 1</div>
+									<!-- 問題內容 -->
+									<div class="questionBlock">
+										<img src="img/question.PNG" style="float:left"/>
+										<div  style="float:right;margin-top:25px;">
+											<div class="custom-control">
+												<input type="radio" name="questionA" />
+												<label>A</label>
+											</div>
+											<div class="custom-control">
+												<input type="radio" name="questionA" />
+												<label>B</label>
+											</div>
+											<div class="custom-control">
+												<input type="radio" name="questionA" />
+												<label>C</label>
+											</div>
+											<div class="custom-control">
+												<input type="radio" name="questionA" />
+												<label>D</label>
+											</div>
+										</div>
+									</div>
+									<div style="clear:both"></div>
+									<!-- 問題標題 -->
+									<div class="question">QUESTION 2</div>
+									<!-- 問題內容 -->
+									<div class="questionBlock">
+										<img src="img/question.PNG" style="float:left"/>
+										<div  style="float:right;margin-top:25px;">
+											<div class="custom-control">
+												<input type="radio" name="questionB" />
+												<label>A</label>
+											</div>
+											<div class="custom-control">
+												<input type="radio" name="questionB" />
+												<label>B</label>
+											</div>
+											<div class="custom-control">
+												<input type="radio" name="questionB" />
+												<label>C</label>
+											</div>
+											<div class="custom-control">
+												<input type="radio" name="questionB" />
+												<label>D</label>
+											</div>
+										</div>
+									</div>
+									<div style="clear:both"></div>
+									<div style="margin:30px 0px;">&nbsp;</div>
+								</form>
+							</div>
+						</div>
+						<div class="tab-pane" id="2">
+							<div class="tabitem">
+								<div class="title">dont do that</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer"></div>
+			<div class="errMsg" id="errMsg">
+				<div id="msgBack">&nbsp;</div>
+				<div id="errMsgContent">
+					<div id="menu">
+						<a onclick="closeMsg()"  style="cursor:pointer;">
+							<img src="img/close.png" id="closeIcon"/>
+						</a>
+					</div>
+					<div id="message">
+						<div>
+							<img src="img/notice.png" style="float:left;"/>
+							<div style="width:246px;font-family:Microsoft JhengHei UI;margin-left:12.5px;line-height:27px;float:left;">
+								請確實完成每個 part ，送出後將無法進行更改。
+							</div>
+							<div style="clear:both">&nbsp;</div>
+						</div>
+						
+						<div style="margin-top:20px;float:right;margin-right:21px;">
+							<input type="button" value="送出" class="errBtn" id="submit" style="margin-right:21px;" onclick="submitAnswer()" onmouseenter="chgBtnColor('submit')"/>
+							<input type="button" value="取消" class="errBtn" id="cancel" onclick="closeMsg()" onmouseenter="chgBtnColor('cancel')"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<input class="input" id="finalPage" type="button" value="送出答案" onclick="sendAnswer()"/>
+		</div>
+		
+	</body>
+</html>

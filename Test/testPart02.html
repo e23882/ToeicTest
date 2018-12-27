@@ -8,7 +8,7 @@
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="js/common.js"></script>
     </head>
-	<body onload="initPage()">
+	<body onload="initPage(1)">
 		<div class="head">
 			<div id="logo">
 				<img src="img/title.PNG"/>
@@ -25,14 +25,14 @@
 		<div class="content">
 			<div>	
 				<ul class="nav nav-tabs" style="width:740px;">
-					<li class="active" >
-						<a href="#1" data-toggle="tab" id="tabItemHeader" class="tabItemHeader" onclick="changeTab(0)">
+					<li>
+						<a href="#1" data-toggle="tab" id="tabItemHeader" class="tabItemHeader" onclick="changeTab(1)">
 							<div class="liTopLine">&nbsp;</div>
 							Part1
 						</a>
 					</li>
-					<li>
-						<a href="#2" id="tabItemHeader" class="tabItemHeader">
+					<li class="active">
+						<a href="#2" data-toggle="tab" id="tabItemHeader" class="tabItemHeader" onclick="changeTab(2)">
 							<div class="liTopLine">&nbsp;</div>
 							Part2
 						</a>
