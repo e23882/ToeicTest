@@ -3,6 +3,30 @@
 var isClick = 0;
 var totalTime = 1800;
 
+function nextPage()
+{
+	//所有的input(radio button)
+	var totalInput = document.getElementsByTagName("INPUT");
+	//所有的問題區塊
+	
+	//邏輯判斷所有input有被選取的數量是不是跟問題區塊的數量一樣
+	//一樣的話表示問題都有回答 
+	
+	var totalQ = document.getElementsByClassName("questionBlock");
+	var answerCount =0;
+	for (var i = 0; i < totalInput.length; i++) 
+	{
+		if(totalInput[i].checked)
+		{
+			answerCount++;
+		}
+	}
+	if(answerCount == totalQ.length)
+		alert("y");
+	else
+		alert("n");
+}
+
 function initPage()
 {
 	//初始化tab顏色設定
@@ -11,11 +35,11 @@ function initPage()
 	if(!isClick)
 	{
 		setInterval(function(){calTime()},1000);
-		
 		isClick = 1;
 	}
 		
 }
+
 function changeTab(tabIndex)
 {
 	var headerItem = document.getElementsByClassName("liTopLine");
@@ -35,8 +59,10 @@ function changeTab(tabIndex)
 
 function calTime()
 {
-	totalTime--;
-	document.getElementById("min").innerHTML = Math.floor(totalTime/60);
-	document.getElementById("sec").innerHTML = totalTime%60;
-	
+	if(totalTime>0)
+	{
+		totalTime--;
+		document.getElementById("min").innerHTML = Math.floor(totalTime/60);
+		document.getElementById("sec").innerHTML = totalTime%60;
+	}	
 }
