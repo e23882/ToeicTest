@@ -24,10 +24,17 @@ label
 	top:17px;
 	right:38px;
 }
-#tabItemHeader
+#tabItemHeaderEnable
 {
 	padding:15.5px 30px 10px 30px;
 	color:#E45304;
+	font-weight:bold;
+	font-family:Arial;
+}
+#tabItemHeaderDisable
+{
+	padding:15.5px 30px 10px 30px;
+	color:#D4D4D4;
 	font-weight:bold;
 	font-family:Arial;
 }
@@ -91,6 +98,9 @@ label
 	border:none;
 	font-size:16px;
 	padding:10px 45px;
+	position: absolute;
+    right: 5%;
+    bottom: 6%;
 }
 
 .errBtn

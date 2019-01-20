@@ -32,7 +32,7 @@ function submitAnswer()
 	alert("implement yourself");
 }
 
-function nextPage()
+function nextPage(pageIndex)
 {
 	//檢查答案 先不要刪掉以後可能會用到
 	// //所有的input(radio button)
@@ -55,7 +55,9 @@ function nextPage()
 		// alert("y");
 	// else
 		// alert("n");
-	document.location.href="testPart07.html";
+	document.location.href="testPart0"+pageIndex+".html";
+
+	
 }
 
 function initPage(pageIndex)
@@ -81,7 +83,10 @@ function changeTab(tabIndex)
 		for(i=0;i<headerItem.length;i++)
 		{
 			headerItem[i].style.backgroundColor = "transparent";
-			contentItem[i].style.color = "#D4D4D4";
+		}
+		for(var i=0;i<tabIndex;i++)
+		{
+			//contentItem[i].style.color = "#D4D4D4";
 		}
 		var curHeaderItem = document.getElementsByClassName("liTopLine")[tabIndex-1];
 		curHeaderItem.style.backgroundColor = "#E45304";

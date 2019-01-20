@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=Big5"/>
 		<link rel="stylesheet" href="css/reset.css"/>
@@ -8,7 +8,7 @@
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="js/common.js"></script>
     </head>
-	<body onload="initPage(1)">
+	<body onload="initPage(2)">
 		<div class="head">
 			<div id="logo">
 				<img src="img/title.PNG"/>
@@ -26,43 +26,43 @@
 			<div>	
 				<ul class="nav nav-tabs" style="width:740px;">
 					<li>
-						<a href="#1" data-toggle="tab" id="tabItemHeader" class="tabItemHeader" onclick="changeTab(1)">
+						<a href="#1" data-toggle="tab" id="tabItemHeaderEnable" class="tabItemHeader" onclick="changeTab(1)">
 							<div class="liTopLine">&nbsp;</div>
 							Part1
 						</a>
 					</li>
 					<li class="active">
-						<a href="#2" data-toggle="tab" id="tabItemHeader" class="tabItemHeader" onclick="changeTab(2)">
+						<a href="#2" data-toggle="tab" id="tabItemHeaderDisable" class="tabItemHeader" onclick="changeTab(2)">
 							<div class="liTopLine">&nbsp;</div>
 							Part2
 						</a>
 					</li>
 					<li>
-						<a href="#2" id="tabItemHeader" class="tabItemHeader">
+						<a href="#1" id="tabItemHeaderDisable" class="tabItemHeader">
 							<div class="liTopLine">&nbsp;</div>
 							Part3
 						</a>
 					</li>
 					<li>
-						<a href="#2" id="tabItemHeader" class="tabItemHeader">
+						<a href="#1" id="tabItemHeaderDisable" class="tabItemHeader">
 							<div class="liTopLine">&nbsp;</div>
 							Part4
 						</a>
 					</li>
 					<li>
-						<a href="#2" id="tabItemHeader" class="tabItemHeader">
+						<a href="#1" id="tabItemHeaderDisable" class="tabItemHeader">
 							<div class="liTopLine">&nbsp;</div>
 							Part5
 						</a>
 					</li>
 					<li>
-						<a href="#2" id="tabItemHeader" class="tabItemHeader">
+						<a href="#1" id="tabItemHeaderDisable" class="tabItemHeader">
 							<div class="liTopLine">&nbsp;</div>
 							Part6
 						</a>
 					</li>
 					<li>
-						<a href="#2" id="tabItemHeader" class="tabItemHeader">
+						<a href="#1" id="tabItemHeaderDisable" class="tabItemHeader">
 							<div class="liTopLine">&nbsp;</div>
 							Part7
 						</a>
@@ -130,12 +130,21 @@
 								</div>
 								<div style="clear:both"></div>
 								<div style="margin:60px 0px;">
-									<input class="input" id="toNextPage" type="button" value="Next" onclick="nextPage()"/>
+									<input class="input" id="toNextPage" type="button" value="Next" onclick="nextPage(3)"/>
 								</div>
 							</form>
 						</div>
 					</div>
 					<div class="tab-pane" id="2">
+						<div class="tabitem">
+							<div class="title">
+								<div style="margin:60px 0px;">
+									<input class="input" id="toNextPage" type="button" value="Next" onclick="nextPage(3)"/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="8">
 						<div class="tabitem">
 							<div class="title">Coming soon...</div>
 						</div>
